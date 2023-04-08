@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@use "@/styles/global" as *;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 62px);
+
+  &._spacing {
+    padding-top: 40px;
+    @include md {
+      padding-top: 100px;
+    }
+  }
+
+  .app__main {
+    flex: 1;
+    overflow-x: hidden;
+  }
+}
