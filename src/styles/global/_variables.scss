@@ -18,6 +18,7 @@ $content_paddingL: 60px;
 // カラー
 $color_base: #e9ebf1;
 $color_text: #292d3d;
+$color_base_transparent: rgb(233 235 241 / 50%);
 
 // イージング
 $ease_out_quint: cubic-bezier(0.22, 1, 0.36, 1);
@@ -25,5 +26,5 @@ $ease_out_cubic: cubic-bezier(0.33, 1, 0.68, 1);
 $ease_in_out_quart: cubic-bezier(0.76, 0, 0.24, 1);
 
 // Headerの高さ
-$header_height: 90px;
+$header_height: 62px;
 $header_height_sp: 70px;
