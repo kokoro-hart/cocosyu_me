@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@use "@/styles/global" as *;
+
+.linkList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  @include sm {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include md {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
