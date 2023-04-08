@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+@use "@/styles/global" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  height: $header_height;
+
+  .header__inner {
+    width: 100%;
+    max-width: 780px;
+    padding-right: 17px;
+    padding-left: 17px;
+    margin: 0 auto;
+    @include md {
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+  }
+
+  &._active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $color_base_transparent;
+
+    .header__title {
+      display: block;
+    }
+
+    .header__logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .header__link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
+  }
+
+  .header__logo {
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .header__title {
+    display: none;
+    @include fz(16);
+    @include font_weight_medium;
+  }
+}
