@@ -1,3 +1,46 @@
 @charset "utf-8";
 
-@use "@/styles/global" as global;
+@use "@/styles/global" as *;
+
+.index {
+  .index__desc {
+    margin-top: 40px;
+    margin-bottom: 18px;
+    @include fz(16);
+    @include font_weight_medium;
+  }
+
+  .index__listWrap {
+    margin-top: 42px;
+  }
+
+  .index__link {
+    position: relative;
+    padding-right: 20px;
+    text-decoration: none;
+    @include fz(16);
+    @include font_weight_medium;
+
+    @include md {
+      &::after {
+        transition: transform 0.3s;
+      }
+
+      &:hover {
+        &::after {
+          transform: translate(3px, -50%);
+        }
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      content: "->";
+      transform: translateY(-50%);
+      @include fz(16);
+      @include font_weight_medium;
+    }
+  }
+}

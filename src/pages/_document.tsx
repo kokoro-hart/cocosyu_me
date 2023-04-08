@@ -6,9 +6,8 @@ function Document() {
       <Head>
         {/* ページ共通 */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Poppins:wght@300;400;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
           rel="stylesheet"
-          key="font"
         />
         <meta charSet="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
