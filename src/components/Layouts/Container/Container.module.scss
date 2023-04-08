@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@use "@/styles/global" as *;
+
+.container {
+  max-width: 780px;
+  padding-right: 17px;
+  padding-left: 17px;
+  margin: 0 auto;
+  @include md {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
